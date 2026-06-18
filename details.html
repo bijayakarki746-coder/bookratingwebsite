@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reading Log - Book Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">My Reading Log</a>
+            <nav>
+                <a href="index.html" class="active">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="admin.html" id="nav-add-book" class="admin-only">ADD BOOK</a>
+                <a href="login.html" id="nav-login-btn" class="nav-login">LOGIN</a>
+            </nav>
+        </div>
+    </header>
+ 
+    <main class="container">
+ 
+        <a href="index.html" class="back-link">&larr; Back to all books</a>
+ 
+        <section class="detail-page">
+ 
+            <div class="detail-cover-wrapper">
+                <img id="detail-cover" src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?q=80&w=1000&auto=format&fit=crop" alt="The Master and Margarita Cover">
+                
+                <div class="detail-meta-grid">
+                    <div>
+                        <span class="meta-label">Genre</span>
+                        <span id="detail-meta-genre">Satirical Fiction</span>
+                    </div>
+                    <div>
+                        <span class="meta-label">Published</span>
+                        <span id="detail-meta-year">1967</span>
+                    </div>
+                    <div>
+                        <span class="meta-label">Pages</span>
+                        <span id="detail-meta-pages">412</span>
+                    </div>
+                    <div>
+                        <span class="meta-label">Read</span>
+                        <span id="detail-meta-dateread">March 2024</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="detail-content">
+ 
+                <span id="detail-top-genre">Satirical Fiction</span>
+ 
+                <h1 id="detail-title">The Master and Margarita</h1>
+                <p class="author" id="detail-author">Mikhail Bulgakov</p>
+                
+                <div class="stars" id="detail-stars">★★★★★</div>
+ 
+                <div class="detail-section">
+                    <h2>Synopsis</h2>
+                    <p id="detail-synopsis">
+                        The Devil visits Soviet Moscow in the 1930s, accompanied by a retinue of demons, and causes havoc for the city's literary establishment. Intertwined is the story of Pontius Pilate and his encounter with Yeshua Ha-Notzri.
+                    </p>
+                </div>
+ 
+                <div class="detail-section" id="detail-quote-block">
+                    <blockquote id="detail-quote">Cowardice is the greatest sin.</blockquote>
+                    <p class="quote-context" id="detail-context">
+                        Spoken by Yeshua Ha-Notzri to Pontius Pilate &mdash; a line that echoes through every page of the novel.
+                    </p>
+                </div>
+ 
+                <div class="detail-section">
+                    <h2>My Review</h2>
+                    <p id="detail-review">
+                        One of the most astonishing novels I have ever read. Bulgakov's wit is surgical; his imagination is boundless. The Moscow chapters made me laugh aloud; the Jerusalem chapters silenced me completely.
+                    </p>
+                </div>
+ 
+                <div class="admin-actions detail-admin-actions admin-only">
+                    <button id="detail-edit-btn" class="btn-sm" style="color:var(--accent-blue)">Edit</button>
+                    <button id="detail-delete-btn" class="btn-sm" style="color:var(--accent-red)">Delete</button>
+                </div>
+ 
+            </div>
+ 
+        </section>
+ 
+    </main>
+ 
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>My Reading Log</h3>
+                <p>A personal archive of books read, rated, and remembered.</p>
+            </div>
+            <div>
+                <h3>PAGES</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                       <a href="admin.html" id="nav-add-book" class="admin-only">ADD BOOK</a>
+           <a href="login.html" id="nav-login-btn" class="nav-login">LOGIN</a>
+                </ul>
+            </div>
+            <div>
+                <h3>QUOTE OF THE LOG</h3>
+                <p class="italic">"Not all those who wander are lost."</p>
+                <small>&mdash; J.R.R. Tolkien</small>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 My Reading Log. All rights reserved.</p>
+            <p>Built with books &amp; caffeine.</p>
+        </div>
+    </footer>
+ 
+    <script src="js/script.js"></script>
+</body>
+</html>
