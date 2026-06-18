@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login / Signup</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    .container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">My Reading Log</a>
+        <nav>
+                <a href="index.html" class="active">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="admin.html" id="nav-add-book" class="admin-only">ADD BOOK</a>
+           <a href="login.html" id="nav-login-btn" class="nav-login">LOGIN</a>
+            </nav>
+    </div>
+</header>
+
+<main class="container">
+
+<div class="auth-container">
+
+    <div class="auth-tabs">
+        <button id="login-tab" class="active">Login</button>
+        <button id="signup-tab">Signup</button>
+    </div>
+
+    <!-- LOGIN -->
+    <form id="login-form" class="auth-form">
+
+        <h2>Login</h2>
+
+        <input
+            type="text"
+            id="login-username"
+            placeholder="Username"
+            required
+        >
+
+        <input
+            type="password"
+            id="login-password"
+            placeholder="Password"
+            required
+        >
+
+        <p id="login-error"></p>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <!-- SIGNUP -->
+    <form
+        id="signup-form"
+        class="auth-form"
+        style="display:none;"
+    >
+
+        <h2>Create Account</h2>
+
+        <input
+            type="text"
+            id="signup-username"
+            placeholder="Username"
+            required
+        >
+
+        <input
+            type="email"
+            id="signup-email"
+            placeholder="Email"
+            required
+        >
+
+        <input
+            type="password"
+            id="signup-password"
+            placeholder="Password"
+            required
+        >
+
+        <p id="signup-error"></p>
+
+        <button type="submit">
+            Signup
+        </button>
+
+    </form>
+
+</div>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
